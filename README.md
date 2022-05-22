@@ -1,6 +1,8 @@
 # Учебный проект
+![status](https://github.com/SPTolkachev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
 ## Описание
-Учебный проект 12 спринта Яндекс.Практикума.
+Учебный проект 13 спринта Яндекс.Практикума.
 
 ## Файл .env
 1. Создайте файл `.env` из шаблона `.env.example`
