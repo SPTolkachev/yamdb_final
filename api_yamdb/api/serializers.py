@@ -99,16 +99,16 @@ class TitleWriteSerializer(TitleReadSerializer):
         if 'category' in ret and isinstance(ret['category'], str):
             category_slug = ret.pop('category')
             category = Categories.objects.get(slug=category_slug)
-            categorySerializer = CategorySerializer(category)
-            ret['category'] = categorySerializer.data
+            category_serializer = CategorySerializer(category)
+            ret['category'] = category_serializer.data
 
         if 'genre' in ret and isinstance(ret['genre'], list):
             genre_slugs = ret.pop('genre')
             genres = []
             for genre_slug in genre_slugs:
                 genre = Genres.objects.get(slug=genre_slug)
-                genreSerializer = GenreSerializer(genre)
-                genres.append(genreSerializer.data)
+                genre_serializer = GenreSerializer(genre)
+                genres.append(genre_serializer.data)
             ret['genre'] = genres
 
         return ret

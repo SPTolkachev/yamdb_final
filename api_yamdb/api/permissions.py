@@ -18,6 +18,7 @@ class IsAmdinOrReadOnly(permissions.BasePermission):
             return True
         elif request.user.is_authenticated:
             return bool(request.user.is_admin)
+        return False
 
 
 class WriteAdmin(permissions.BasePermission):
