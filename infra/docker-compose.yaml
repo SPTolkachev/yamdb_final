@@ -9,7 +9,7 @@ services:
       - ./.env
 
   web:
-    image: stolkachev/yamdb_final:latest
+    image: stolkachev/yamdb_final:latest 
     restart: always
     entrypoint: /bin/bash /app/entrypoint.sh
     volumes:
