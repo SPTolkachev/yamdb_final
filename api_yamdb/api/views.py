@@ -12,9 +12,9 @@ from rest_framework.pagination import (LimitOffsetPagination,
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
+from reviews.models import Categories, Comments, Genres, Review, Title
 
 from api_yamdb.settings import EMAIL_SENDER
-from reviews.models import Categories, Comments, Genres, Review, Title
 
 from .filters import TitleFilter
 from .permissions import (IsAdmin, IsAmdinOrReadOnly, WriteAdmin,
