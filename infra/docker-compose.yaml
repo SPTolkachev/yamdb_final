@@ -22,8 +22,6 @@ services:
       - db
     env_file:
       - ./.env
-    ports:
-      - "8088:8000"
 
   nginx:
     container_name: yamdb_final_nginx
