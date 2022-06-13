@@ -1,5 +1,5 @@
 # Учебный проект
-![status](https://github.com/SPTolkachev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+[![Yamdb workflow](https://github.com/SPTolkachev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=main)](https://github.com/SPTolkachev/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
 ## Описание
 Учебный проект 13 спринта Яндекс.Практикума.
