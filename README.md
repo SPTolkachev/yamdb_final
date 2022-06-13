@@ -33,6 +33,9 @@ $ docker-compose --file ./infra/docker-compose.yaml up -d --build
 sudo rm infra/pgdata
 ```
 
+### адрес сервера с развернутым сервисом
+84.201.141.20
+
 ### Заполнение базы
 Для выполнения миграций выполните следующую команду
 ```shell
