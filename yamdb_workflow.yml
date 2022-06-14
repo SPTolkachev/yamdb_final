@@ -60,7 +60,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
     - name: executing remote ssh commands to deploy
-      uses: appleboy/ssh-action@master
+      uses: appleboy/ssh-action@main
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
@@ -87,7 +87,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
     - name: send message
-      uses: appleboy/telegram-action@master
+      uses: appleboy/telegram-action@main
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
