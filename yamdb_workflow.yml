@@ -71,7 +71,7 @@ jobs:
         script: |
             cd yamdb_final
             sudo docker-compose stop
-            docker image rm yamdb_final_web
+            sudo docker image rm yamdb_final_web
             touch .env
             echo SECRET_KEY="${{ secrets.SECRET_KEY }}" > .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
